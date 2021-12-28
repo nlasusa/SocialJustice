@@ -35,13 +35,38 @@
 #page-subtitle {
     font-size: 26px; 
 }
+
+/* // MOBILE VIEW //  */
+@media (max-width: 750px) {
+#page-title {
+    font-size: 30px; 
+    }
+#page-subtitle {
+    font-size: 20px; 
+    }
+#header-image {
+    width: 300px; 
+    }
+
+@media (max-width: 450px) {
+#page-title {
+    font-size: 25px; 
+    }
+#page-subtitle {
+    font-size: 15px; 
+    }
+#header-image {
+    width: 300px; 
+    }
+}
+/* // END OF MOBILE VIEW */
 </style>
 
 </head>
 <body>
 
 <div id="page-title" data-aos="fade-down">
-    <img src="sj2.jpg" width="300px"><br>
+    <img src="sj2.jpg" id="header-image" width="350px"><br>
     kids fighting racism 
     <div id="page-subtitle">a safe space for social justice</div>
 </div>
