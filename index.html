@@ -13,12 +13,7 @@
  <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-<!-- Font Awesome Icons  -->
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.0/css/all.css'>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!-- JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -39,8 +34,12 @@
     font-size: 26px; 
     margin-top: -6px; 
 }
+#page-subtitle2 {
+    font-size: 16px; 
+    color: rgb(219, 167, 25); 
+}
 
-.container {
+.container-newsletter {
     width: 60%;
     margin: 0 auto;
 }
@@ -54,11 +53,12 @@
   flex-flow: row wrap;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  font-size: 16px; 
   letter-spacing: 1px; 
 }
 
 span {
-    margin: 10px;
+    /* margin: 10px; */
     text-align: center;
 }
   
@@ -88,6 +88,7 @@ hr {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     letter-spacing: 1px; 
+    margin-top: 10px; 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -113,7 +114,202 @@ input {
     width: 100%; 
 }
 
-/* // MOBILE VIEW //  */
+/*DONATION Headings & text*/
+#container-donation {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-top: 50px; 
+}
+.org-txt {
+  color: rgb(29, 130, 245); 
+  font-family: 'Raleway', sans-serif;
+}
+
+#foundation-link {
+    color: rgb(29, 130, 245); 
+}
+.blue-txt {
+  color: #2196F3;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#inprogress {
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+/*Headings & text end*/
+
+
+/*Buttons*/
+.green-btn,
+.green-btn:hover,
+.green-btn:focus {
+  background: rgb(173, 202, 5); 
+	border-radius: 3px;
+	color: #fff;
+	font-size: 20px;
+	padding: 11px;
+	width: 100%;
+  outline: none !important;
+  font-family: 'Raleway', sans-serif;
+font-weight: 300;
+  box-shadow: 0px 5px 2px -4px gainsboro;
+}
+.green-btn:focus:active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  color: #fff;
+}
+
+.grey-btn,
+.grey-btn:hover {
+  background: #fafafa;
+	border-radius: 3px;
+	border: solid 1px #dcdcdc;
+	color: #777 !important;
+	font-size: 17px;
+	padding: 10px;
+	width: 100%;
+	outline: none !important;
+	font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 5px 2px -4px gainsboro;
+}
+.grey-btn:focus:active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  color: #777;
+}
+
+.tw-btn,
+.tw-btn:hover {
+	background: #2196F3;
+	border-radius: 3px;
+	color: #fff !important;
+	font-size: 17px;
+	padding: 10px;
+	width: 100%;
+	outline: none !important;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	box-shadow: 0px 5px 2px -4px gainsboro;
+}
+.tw-btn:focus:active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  color: #777;
+}
+
+.saved-btn,
+.saved-btn:hover {
+  background: rgb(29, 130, 245); 
+  border: solid 1px rgb(29, 130, 245); 
+  color: #fff !important;
+}
+/*Buttons end*/
+
+
+/*Donation*/
+.custom-popover {
+  border-radius: 4px;
+  position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	max-width: 100%;
+  background: #3a3a3a;
+  color: #fff;
+  border: 0;
+  padding: 10px 5px;
+}
+.custom-popover p {
+  margin-bottom: 0;
+	font-size: 17px;
+  font-family: 'Nunito', sans-serif;
+	text-align: center;
+	font-weight: 500;
+}
+.custom-popover .arrow {
+  margin-left: auto;
+  transition: 0.4s all ease-in-out;
+}
+.custom-popover .arrow:after {
+  border-top-color: #3a3a3a !important;
+}
+.box {
+  border-radius: 0;
+  border: solid 1px gainsboro;
+  box-shadow: 0px 5px 7px -4px gainsboro;
+}
+.box-padd {
+  padding: 20px;
+}
+.box p {
+  font-size: 18px;
+	font-weight: 500;
+	color: #757575;
+}
+.progress {
+  border-radius: 0;
+	border-bottom: solid 1px #dcdcdc;
+	box-shadow: none;
+  margin-bottom: 0;
+}
+.progress .progress-bar {
+  background: rgb(173, 202, 5); 
+  box-shadow: none;
+	/* specific to codepen.io	 */
+	height: 100% !important;
+}
+.amt-input-group-addon {
+  background: rgba(0, 0, 0, 0);
+  padding-right: 0;
+  font-weight: 700;
+  color: #757575;
+  font-size: 20px;
+  padding: 10px;
+}
+.input-group-txt,
+.input-group-txt:hover,
+.input-group-txt:focus {
+  border: 1px solid #ccc;
+	border-left: 0;
+	box-shadow: none;
+	outline: none;
+	font-size: 22px;
+	padding: 10px;
+	height: auto;
+	padding-left: 0;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+}
+#success {
+  display: none;
+}
+.share-popover {
+  border-radius: 4px;
+  position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	max-width: 100%;
+  background: #fff;
+  padding: 10px 5px;
+  margin-top: 20px !important;
+}
+.share-popover .arrow {
+  left: 75% !important;
+}
+/*Donation end*/
+
+
+/* // MEDIA QUERIES //  */
+@media screen and (max-width: 768px) {
+  .col-mgbtm {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 750px) {
 #page-title {
     font-size: 30px; 
@@ -127,6 +323,9 @@ input {
 .newsletter {
     font-size: 14px;
     margin-top: 20px; 
+}
+button {
+    margin-top: 10px; 
 }
 }
 
@@ -146,8 +345,11 @@ input {
     font-size: 14px;
     margin-top: 10px; 
 }
+button {
+    margin-top: 10px; 
 }
-/* // END OF MOBILE VIEW */
+}
+/* // END OF MEDIA QUERIES*/
 </style>
 
 </head>
@@ -157,11 +359,12 @@ input {
     <img src="sj2.jpg" id="header-image" width="350px"><br>
     kids fighting racism 
     <div id="page-subtitle">a safe space for social justice</div>
+    <div id="page-subtitle2">by maya check</div>
 </div>
 
-<div class="container">
+<div class="container-newsletter">
     <div class="newsletter" data-aos="fade-down">
-      <span>KEEP UP TO DATE WITH UPCOMING EVENTS AND CHARITIES</span>
+      <span>KEEP UP TO DATE WITH UPCOMING EVENTS AND CHARITIES &nbsp;</span>
       <br>
       <div class="center hideform">
         <button id="close" style="float: right;">X</button><br>
@@ -176,6 +379,67 @@ input {
     </div>
     <hr/>
   </div>
+
+
+  <div class="container" id="container-donation">
+    <div class="row">
+      <div class="col-md-offset-4 col-sm-offset-3 col-md-4 col-sm-6">
+        <div class="popover top custom-popover">
+          <div class="arrow"></div>
+          <div class="popover-content">
+            <p id="inprogress">
+              $<span id="amount_txt">900</span> still needed for this project
+            </p>
+            <p id="success">
+              Project Fully Funded!
+            </p>
+          </div><!--popover-content-->
+        </div><!--popover end-->
+        <div class="box">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+              <span class="sr-only">10% Complete</span>
+            </div><!--progress-bar end-->
+          </div><!--progress end-->
+          <div class="box-padd">
+            <p>
+              <span class="org-txt">Only 8 days</span> left to fund this project.
+            </p>
+            <p>
+              Join the <strong>42</strong> other donors who have already supported the <a href="https://www.childfoundation.org/" id="foundation-link" >CHILD FOUNDATION</a> charity.
+              <br><br>Every dollar helps.
+            </p>
+            <br>
+            <div class="row">
+              <div class="col-sm-6 col-mgbtm">
+                <div class="input-group">
+                  <span class="input-group-addon amt-input-group-addon">$</span>
+                  <input type="number" class="form-control input-group-txt" id="amount" value="100" min="0">
+                </div>
+              </div><!--col-sm-* end-->
+              <div class="col-sm-6 col-mgbtm">
+                <button class="btn green-btn" id="give">Give Now</button>
+              </div><!--col-sm-* end-->
+            </div><!--row end-->
+          </div><!--box-padd end-->
+        </div><!--box end-->
+        <br>
+        <div class="row">
+          <div class="col-sm-6 col-mgbtm">
+            <button class="btn grey-btn" id="save">Save for later</button>
+          </div><!--col-sm-* end-->
+          <div class="col-sm-6 col-mgbtm">
+            <span class="btn grey-btn share" data-link="https://twitter.com/share?text=Yay, I donated!">Tell your friends</span>
+          </div><!--col-sm-* end-->
+        </div><!--row end-->
+      </div><!--col-md-* end-->
+    </div><!--row end-->
+  </div><!--container end-->
+
+  <br><br><br>
+
+
+
     
  <!-- // JS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -194,6 +458,67 @@ $('#close').on('click', function () {
 $('#submit').on('click', function () {
     $('.center').hide();
 })
+</script>
+<script>
+    $(document).ready(function($){
+
+// Popover & tooltip initialize
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
+
+
+// set total & needed
+localStorage.setItem('total', 1000);
+localStorage.setItem('needed', 900);
+$('.custom-popover .arrow').css('left', '10%');
+
+
+// Give btn
+$('#give').bind('click', function(){
+  var amount = $('#amount').val();
+  var total = localStorage.getItem('total');
+  var needed = localStorage.getItem('needed') - amount;
+  localStorage.setItem('needed', needed);
+  var width = 100 - (needed/total)*100;
+  // console.log(needed);
+  // console.log(width);
+  if(needed <= 0) {
+    $('#amount_txt').html('0');
+    $('#inprogress').hide();
+    $('#success').show();
+    $('.progress-bar').css('background','#00be1c');
+    $('.custom-popover .arrow').css('left', '96%');
+    $('.progress-bar').css('width', 100+'%');
+  } else {
+    $('#inprogress').show();
+    $('#success').hide();
+    $('#amount_txt').html(needed);
+    if(width>90) {
+      $('.custom-popover .arrow').css('left', '96%');
+    } else {
+      $('.custom-popover .arrow').css('left', (width)+'%');
+    }
+    $('.progress-bar').css('width', (width)+'%');
+  }
+});
+// Give btn end
+
+
+// share
+$('.share').bind("click",function(e){
+  window.open($(this).attr("data-link"),"yyyyy","width=500,height=500,resizable=no,toolbar=no,menubar=no,location=no,status=no");
+});
+
+
+// save
+$('#save').bind("click",function(e){
+  $(this).addClass('saved-btn');
+  $(this).html('Saved!');
+});
+
+});
+
+
 </script>
 
 </body>
