@@ -19,6 +19,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<!-- JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 <style type="text/css">
 #page-title {
@@ -53,24 +56,61 @@
   font-weight: 300;
   letter-spacing: 1px; 
 }
-  span {
+
+span {
     margin: 10px;
     text-align: center;
-  }
+}
   
-  button {
+button {
     color: #fff;
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 6px 12px;
-    background-color: rgba(5, 177, 33, 0.5);
-  }
+    padding: 6px 15px;
+    background-color: rgb(173, 202, 5); 
+}
+
+button:hover {
+    background-color: rgb(158, 185, 3); 
+}
 
 hr {
   border: 0;
   height: 1px;
   background-color: rgba(0,0,0,0.2)
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hideform {
+    display: none;
+}
+
+#close {
+    background-color: white;
+    color: black; 
+    margin-top: -10px;
+}
+
+#submit {
+    background-color: rgb(29, 130, 245); 
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 1%;
+}
+
+input {
+    width: 100%; 
 }
 
 /* // MOBILE VIEW //  */
@@ -122,7 +162,17 @@ hr {
 <div class="container">
     <div class="newsletter" data-aos="fade-down">
       <span>KEEP UP TO DATE WITH UPCOMING EVENTS AND CHARITIES</span>
-      <button>SIGN UP FOR NEWSLETTER</button>
+      <br>
+      <div class="center hideform">
+        <button id="close" style="float: right;">X</button><br>
+        <form>
+            Email:<br>
+            <input type="text" name="email" value="">
+            <br><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+      <button id="show">SIGN UP FOR NEWSLETTER</button>
     </div>
     <hr/>
   </div>
@@ -130,6 +180,21 @@ hr {
  <!-- // JS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>AOS.init();</script>
+ <script>
+ $('#show').on('click', function () {
+    $('.center').show();
+    $(this).hide();
+})
+
+$('#close').on('click', function () {
+    $('.center').hide();
+    $('#show').show();
+})
+
+$('#submit').on('click', function () {
+    $('.center').hide();
+})
+</script>
 
 </body>
 </html>
