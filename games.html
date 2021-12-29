@@ -45,6 +45,22 @@
     color: rgb(218, 132, 20); 
 }
 
+.home {
+  font-size: 18px; 
+    /* margin-top: 40px;  */
+    margin-left: 20px; 
+    letter-spacing: 5px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: black;
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.home:hover {
+  cursor: pointer; 
+}
+
 .play-game {
     font-size: 30px; 
     margin-top: 5px; 
@@ -400,6 +416,11 @@ button {
 .container-users {
   width: 90%; 
 }
+.home {
+  font-size: 12px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
 }
 
 @media (max-width: 450px) {
@@ -427,6 +448,11 @@ button {
 .container-users {
   width: 90%; 
 }
+.home {
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
 }
 /* // END OF MEDIA QUERIES*/
 </style>
@@ -439,6 +465,10 @@ button {
         kids fighting racism 
         <div id="page-subtitle">a safe space for social justice</div>
         <div id="page-subtitle2">by maya check</div>
+    </div>
+
+    <div class="home">
+      BACK TO MAIN PAGE
     </div>
 
     <br>
@@ -684,6 +714,11 @@ button {
     }
     
      </script></script>
+      <script>// ON CLICK EVENTS 
+        $(".home").on('click', function(){
+            window.location = "index.html";    
+          });
+        </script>
 
 </body>
 </html>

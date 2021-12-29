@@ -39,6 +39,20 @@
     color: rgb(218, 132, 20); 
 }
 
+.home {
+  font-size: 18px; 
+    /* margin-top: 40px;  */
+    margin-left: 20px; 
+    letter-spacing: 5px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: black;
+}
+
+.home:hover {
+  cursor: pointer; 
+}
+
 .container-newsletter {
     width: 60%;
     margin: 0 auto;
@@ -450,6 +464,11 @@ button {
 .container-users {
   width: 90%; 
 }
+.home {
+  font-size: 12px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
 }
 
 @media (max-width: 450px) {
@@ -477,6 +496,11 @@ button {
 .container-users {
   width: 90%; 
 }
+.home {
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
 }
 /* // END OF MEDIA QUERIES*/
 </style>
@@ -490,6 +514,11 @@ button {
     <div id="page-subtitle">a safe space for social justice</div>
     <div id="page-subtitle2">by maya check</div>
 </div>
+
+<div class="home">
+  BACK TO MAIN PAGE
+</div>
+
 
 <!-- // user sign up form -->
 <div class="wrapper" id="myForm">
@@ -507,6 +536,12 @@ button {
  <!-- // JS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>AOS.init();</script>
+ <script>// ON CLICK EVENTS 
+  $(".home").on('click', function(){
+      window.location = "index.html";    
+    });
+  </script></script>
+
 
 </body>
 </html>
