@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Justice</title>
+    <title>Kids Fighting Racism</title>
 
  <!-- Google Font -->
  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
@@ -37,6 +37,25 @@
 #page-subtitle2 {
     font-size: 16px; 
     color: rgb(218, 132, 20); 
+}
+
+.play-game {
+    font-size: 30px; 
+    margin-top: 5px; 
+    padding: 10px; 
+    letter-spacing: 5px; 
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 0, 221);
+    font-weight: 300;
+    text-align: center; 
+    color: white; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+.play-game:hover {
+  background-color: rgb(199, 4, 173);
+  cursor: pointer; 
 }
 
 .container-newsletter {
@@ -507,8 +526,12 @@ button {
   </div><!--container end-->
 
   <br><br><br>
+  
+  <div class="play-game">
+    PLAY TIC-TAC-TOE TO EARN <br> $ TOWARDS DONATIONS
+</div>
 
-
+<br><br><br><br><br>
 
     
  <!-- // JS -->
@@ -610,6 +633,9 @@ $("#user-boards4").on('click', function(){
 });
 $("#user-boards5").on('click', function(){
     window.location = "signin.html";    
+});
+$(".play-game").on('click', function(){
+    window.location = "games.html";    
 });
 </script>
 
