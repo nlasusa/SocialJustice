@@ -62,6 +62,26 @@
   cursor: pointer; 
 }
 
+.rules-reg {
+    font-size: 17px; 
+    margin-top: 5px; 
+    padding: 10px; 
+    letter-spacing: 5px; 
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 0, 221);
+    font-weight: 300;
+    text-align: center; 
+    color: white;
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+.rules-reg:hover {
+  background-color: rgb(199, 4, 173);
+  cursor: pointer; 
+}
+
+
 .container-newsletter {
     width: 60%;
     margin: 0 auto;
@@ -466,8 +486,16 @@ button {
         <div id="page-subtitle">A safe, fact-checked, and fun place for young people to learn about, share,<br> and understand all the social and political issues they face today and tommorow.</div>
     </div>
     </div>
+
+    <br>
     
-<div class="container-newsletter">
+    <div class="rules-reg">
+  RULES AND REGULATIONS 
+</div>
+
+<br>
+    
+<!-- <div class="container-newsletter">
     <div class="newsletter" data-aos="fade-down">
       <span>KEEP UP TO DATE WITH ALL UPCOMING EVENTS AND CHARITIES &nbsp;</span>
       <br>
@@ -483,9 +511,10 @@ button {
       <button id="show">SIGN UP FOR NEWSLETTER</button>
     </div>
     <hr/>
-  </div>
+  </div> -->
 
 <br>
+
 <div class="container-users">
   <div class="user-posts">
     USER POSTS <img class="avatar avatar-small" alt="jonrohan" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" width="25" height="25"/> &nbsp; <span id="user-signup">SIGN UP</span> OR <span id="user-signin">SIGN IN</span> TO SEE SIMILAR BOARDS<br> 
@@ -566,6 +595,26 @@ button {
   
   <div class="play-game" data-aos="fade-right">
     PLAY TIC-TAC-TOE TO EARN <br> $ TOWARDS DONATIONS
+</div>
+
+<br>
+
+<div class="container-newsletter">
+  <div class="newsletter" data-aos="fade-down">
+    <span>KEEP UP TO DATE WITH ALL UPCOMING EVENTS AND CHARITIES &nbsp;</span>
+    <br>
+    <div class="center hideform">
+      <button id="close" style="float: right;">X</button><br>
+      <form>
+          Email:<br>
+          <input type="text" name="email" value="">
+          <br><br>
+          <input type="submit" value="Submit" id="submit">
+      </form>
+  </div>
+    <button id="show">SIGN UP FOR NEWSLETTER</button>
+  </div>
+  <hr/>
 </div>
 
 <br><br><br><br><br>
@@ -673,6 +722,9 @@ $("#user-boards5").on('click', function(){
 });
 $(".play-game").on('click', function(){
     window.location = "games.html";    
+});
+$(".rules-reg").on('click', function(){
+    window.location = "rules.html";    
 });
 </script>
 
