@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Fighting Racism</title>
+    <title>TOGETHER</title>
 
  <!-- Google Font -->
  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     font-size: 50px; 
     /* margin-top: 40px;  */
     padding: 10px; 
-    letter-spacing: 5px; 
+    letter-spacing: 15px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; 
@@ -31,12 +31,15 @@
     color: black;
 }
 #page-subtitle {
-    font-size: 26px; 
-    margin-top: -6px; 
+    font-size: 14px; 
+    letter-spacing: 2px; 
+    margin-top: 10px; 
+    color: rgb(142, 0, 224); 
 }
 #page-subtitle2 {
     font-size: 16px; 
     font-weight: 300;
+    letter-spacing: 9px; 
     color: rgb(218, 132, 20); 
 }
 
@@ -382,7 +385,7 @@ font-weight: 300;
     font-size: 30px; 
     }
 #page-subtitle {
-    font-size: 17px; 
+    font-size: 11px; 
     }
 #page-subtitle2 {
     font-size: 14px; 
@@ -403,6 +406,14 @@ button {
 .play-game {
     font-size: 18px; 
     width: 85%;
+}
+.home {
+  font-size: 12px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
+#together-image {
+  width: 100%; 
 }
 }
 
@@ -435,6 +446,11 @@ button {
     font-size: 12px; 
     width: 75%;
 }
+.home {
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 15px; 
+}
 }
 /* // END OF MEDIA QUERIES*/
 </style>
@@ -442,13 +458,15 @@ button {
 </head>
 <body>
 
-<div id="page-title" data-aos="fade-down">
-    <img src="sj2.jpg" id="header-image" width="350px"><br>
-    kids fighting racism 
-    <div id="page-subtitle">a safe space for social justice</div>
-    <div id="page-subtitle2">by maya check</div>
-</div>
-
+  <div class="container">
+    <div id="page-title" data-aos="fade-down">
+        <img src="sj2.jpg" id="header-image" width="350px"><br>
+        <img src="acronym.png" id ="together-image" width="470px">
+        <div id="page-subtitle2">By Maya Check</div>
+        <div id="page-subtitle">A safe, fact-checked, and fun place for young people to learn about, share,<br> and understand all the social and political issues they face today and tommorow.</div>
+    </div>
+    </div>
+    
 <div class="container-newsletter">
     <div class="newsletter" data-aos="fade-down">
       <span>KEEP UP TO DATE WITH ALL UPCOMING EVENTS AND CHARITIES &nbsp;</span>
@@ -467,6 +485,7 @@ button {
     <hr/>
   </div>
 
+<br>
 <div class="container-users">
   <div class="user-posts">
     USER POSTS <img class="avatar avatar-small" alt="jonrohan" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" width="25" height="25"/> &nbsp; <span id="user-signup">SIGN UP</span> OR <span id="user-signin">SIGN IN</span> TO SEE SIMILAR BOARDS<br> 
@@ -488,7 +507,7 @@ button {
 </div>
 
 
-  <div class="container" id="container-donation">
+  <div class="container" id="container-donation" data-aos="fade-left">
     <div class="row">
       <div class="col-md-offset-4 col-sm-offset-3 col-md-4 col-sm-6">
         <div class="popover top custom-popover">
@@ -545,7 +564,7 @@ button {
 
   <br><br><br>
   
-  <div class="play-game">
+  <div class="play-game" data-aos="fade-right">
     PLAY TIC-TAC-TOE TO EARN <br> $ TOWARDS DONATIONS
 </div>
 
