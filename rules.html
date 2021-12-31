@@ -58,12 +58,23 @@
   cursor: pointer; 
 }
 
+.rules-reg-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px; 
+    font-size: 28px; 
+    text-align: center; 
+    background-color: rgb(255, 0, 221);
+    color: white; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+
 .rules-reg-body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 16px; 
+    font-size: 17px; 
     text-align: center; 
-    background-color: rgb(240, 240, 240); 
 }
 
 .container-newsletter {
@@ -177,6 +188,10 @@ hr {
 
 input {
     width: 100%; 
+}
+
+#fact-links {
+    color: rgb(0, 120, 240);
 }
 
 /*DONATION Headings & text*/
@@ -371,7 +386,7 @@ font-weight: 300;
 .wrapper {
     margin-top: 5px;
     padding: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; 
     background-color: rgb(240, 240, 240); 
   }
 
@@ -401,6 +416,18 @@ font-weight: 300;
       color: black;
       text-align: center; 
   }
+
+  footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 15px; 
+  letter-spacing: 1px; 
+  text-align: center; 
+  padding: 25px; 
+  background-color: white;
+  color: black;
+}
+
   
   .form-signing-heading,
   .checkbox {
@@ -458,6 +485,13 @@ font-weight: 300;
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .rules-reg-title {
+  width: 100%; 
+  font-size: 16px; 
+}
+}
+
 @media (max-width: 750px) {
 #page-title {
     font-size: 30px; 
@@ -492,6 +526,10 @@ button {
 }
 #together-image {
   width: 100%; 
+}
+.rules-reg-title {
+  width: 100%; 
+  font-size: 15px; 
 }
 }
 
@@ -546,19 +584,22 @@ button {
   BACK TO MAIN PAGE
 </div>
 
-<br><br>
-
 <div class="wrapper">
 <div class="container">
+  <div class="rules-reg-title">
+    RULES AND REGULATIONS</div><br>
     <div class="rules-reg-body">
         Together is dedicated to offering and maintaining fact-checked educational materials covering a variety of political and social issues in order to facilitate the safe and respectful dialogue and collaboration between our members. 
 
-To that end we have partnered with FactCheck.org and webpurify.com; both offer the most advanced systems to support our vision of our member community. 
+To that end we have partnered with <a href="https://www.factcheck.org/" id="fact-links">FactCheck.org </a>and <a href="https://www.webpurify.com/" id="fact-links">webpurify.com</a>; both offer the most advanced systems to support our vision of our member community. 
 
 In addition, we have a dedicated team to help monitor and evaluate real-time issues that may occur in member chat boards. Members are encouraged to report any dialogue that seems threatening, dismissive, or discriminatory. Please be respectful, kind, and open. No profanity or other inappropriate discussion will be tolerated.
     </div>
 </div>
 </div>
+
+<footer>
+  MAYA CHECK 2021 ALL RIGHTS RESERVED</footer>
 
 
     
